@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         //borderRadius: BorderRadius.circular(5),
-        color: Colors.deepPurple,
+        color: Color(0xFF5636D3),
       ),
       child: Center(
         child: Column(
@@ -184,85 +184,6 @@ class Home extends StatelessWidget {
                 ),
               ),
             ),
-                   /*
-                    Padding(
-                      padding:EdgeInsets.only(top: 40.0),
-                      child:Container(
-                        height: 56.0,
-                        width: 311.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
-                        ),
-                        child: Row(
-                          children: [
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(15.0),
-                                  child: Image.asset('lib/assets/google-icon.jpg'),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 40.0),
-                                  child: const Text(
-                                    'Entrar com Google',
-                                    style: TextStyle(
-                                      decoration:TextDecoration.none,
-                                      color: Color(0xFF363F5F),
-                                      fontSize: 14.0,
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.w300,
-                                      height: 1.3,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                          ],
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding:EdgeInsets.only(top: 10.0),
-                      child:Container(
-                        height: 56.0,
-                        width: 311.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Colors.white,
-                        ),
-                        child: Row(
-                          children: [
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.all(15.0),
-                                  child: Image.asset('lib/assets/apple-icon.jpg'),
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.only(left: 40.0),
-                                  child: const Text(
-                                    'Entrar com Apple',
-                                    style: TextStyle(
-                                      decoration:TextDecoration.none,
-                                      color: Color(0xFF363F5F),
-                                      fontSize: 14.0,
-                                      fontFamily: 'Poppins',
-                                      fontWeight: FontWeight.w300,
-                                      height: 1.3,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-
-                          ],
-                        ),
-                      ),
-                    ),
-*/
-
 
           ],
 
