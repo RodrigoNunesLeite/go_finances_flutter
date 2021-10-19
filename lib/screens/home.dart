@@ -101,7 +101,7 @@ class Home extends StatelessWidget {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Padding(
-                              padding:EdgeInsets.only(top: 40.0),
+                              padding:const EdgeInsets.only(top: 40.0),
                               child:Container(
                                 height: 56.0,
                                 width: 311.0,
@@ -139,7 +139,7 @@ class Home extends StatelessWidget {
                               ),
                             ),
                             Padding(
-                              padding:EdgeInsets.only(top: 10.0),
+                              padding:const EdgeInsets.only(top: 10.0),
                               child:Container(
                                 height: 56.0,
                                 width: 311.0,
@@ -155,9 +155,9 @@ class Home extends StatelessWidget {
                                           padding: const EdgeInsets.all(15.0),
                                           child: Image.asset('lib/assets/apple-icon.jpg'),
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.only(left: 40.0),
-                                          child: const Text(
+                                        const Padding(
+                                          padding: EdgeInsets.only(left: 40.0),
+                                          child: Text(
                                             'Entrar com Apple',
                                             style: TextStyle(
                                               decoration:TextDecoration.none,
