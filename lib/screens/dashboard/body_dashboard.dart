@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import 'cards.dart';
+import 'cards/cards_menu.dart';
 
 class BodyDashboard extends StatelessWidget{
   @override
@@ -8,7 +8,7 @@ class BodyDashboard extends StatelessWidget{
     // TODO: implement build
     return Center(child: Column(
       children: [
-        Cards(),
+        CardsMenu(),
       ],
     ));
       /*

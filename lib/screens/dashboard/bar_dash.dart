@@ -9,6 +9,8 @@ class BarDash extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
   return AppBar(
     backgroundColor: Color(0xFF5636D3),
+    bottomOpacity: 0.0,
+    elevation: 0.0,
     leading: Padding(
       padding: EdgeInsets.all(8.0),
 
