@@ -1,40 +1,59 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'dart:core';
 
 class Cards extends StatelessWidget {
 
-  NumberFormat formatter = NumberFormat("00.000,00");
+  NumberFormat formatter = NumberFormat("00.00000");
 
-  late double width;
-  late double height;
   late int backgroundCardColor;
-  String cardTitle;
+  late String cardTitle;
   late IconData iconCard;
   late int iconColor;
-  late double(12,4) valorPrincipal;
-  String ultimoLcto;
+  late int circleIconBackgroundColor;
+  late int circleIconColor;
+  late double  valorPrincipal;
+  late String ultimoLcto;
+  late String valorPrincipalFormatado;
+  late int titleColor;
+  late int valueColor;
+  late int subtitleColor;
 
   Cards({
-    required this.width,
-    required this.height,
     required this.backgroundCardColor,
     required this.cardTitle,
     required this.iconCard,
     required this.iconColor,
     required this.valorPrincipal,
     required this.ultimoLcto,
+    required this.circleIconBackgroundColor,
+    required this.circleIconColor,
+    required this.titleColor,
+    required this.valueColor,
+    required this.subtitleColor,
   });
+
+  main() {
+    String valorPrincipalFormatado =  getCurrency();
+  }
+
+  String getCurrency() {
+    NumberFormat formatter = NumberFormat.simpleCurrency(locale: 'pt_BR');
+    return formatter.format(valorPrincipal);
+  }
+
 
 
 @override
   Widget build(BuildContext context) {
+
+  String valorPrincipalFormatado =  getCurrency();
+
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Container(
-        width: width,
-        height: height,
+        width: 300.0,
+        height: 183.0,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
           color: Color(backgroundCardColor),
@@ -49,20 +68,20 @@ class Cards extends StatelessWidget {
                 children:  [
                   Text(
                     cardTitle,
-                    style: const TextStyle(
+                    style: TextStyle(
                       fontFamily: 'Inter',
                       fontSize: 14,
                       decoration:TextDecoration.none,
                       fontWeight: FontWeight.w400,
-                      color: Color(0xFF363F5F),
+                      color: Color(titleColor),
                       fontStyle: FontStyle.normal,
                     ),
                   ),
                   CircleAvatar(
-                      backgroundColor: Color(0XFF12A454),
+                      backgroundColor: Color(circleIconColor),
                       radius: 25,
                       child: CircleAvatar(
-                        backgroundColor: Colors.white,
+                        backgroundColor: Color(circleIconBackgroundColor),
                         radius: 23,
                         child:  Icon(
                           iconCard,
@@ -79,13 +98,13 @@ class Cards extends StatelessWidget {
                 child: Row(
                   children: [
                     Text(
-                      'R\$ $valorPrincipal',
+                      '$valorPrincipalFormatado',
                       style: TextStyle(
                         fontFamily: 'Poppins',
                         fontSize: 32,
                         decoration:TextDecoration.none,
                         fontWeight: FontWeight.w400,
-                        color: Color(0xFF363F5F),
+                        color: Color(valueColor),
                         fontStyle: FontStyle.normal,
                       ),
                     ),
@@ -101,7 +120,7 @@ class Cards extends StatelessWidget {
                       fontSize: 12,
                       decoration:TextDecoration.none,
                       fontWeight: FontWeight.w400,
-                      color: Color(0xFF969CB2),
+                      color: Color(subtitleColor),
                       fontStyle: FontStyle.normal,
                     ),
                   ),

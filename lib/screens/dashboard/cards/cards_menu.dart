@@ -30,255 +30,45 @@ class CardsMenu extends StatelessWidget {
                   children: <Widget>[
 
                     Cards(
-                      height: 183.0,
-                      width: 300.0,
                       backgroundCardColor: 0xFFFFFFFF,
                       cardTitle: "Entradas",
                       iconCard: Icons.arrow_upward_rounded,
-                      iconColor: 0xFF363F5F,
-                      valorPrincipal: 17.40000,
+                      iconColor: 0XFF12A454,
+                      circleIconBackgroundColor: 0xFFFFFFFF,
+                      circleIconColor:0XFF12A454,
+                      valorPrincipal: 17400.00,
                       ultimoLcto: 'Última entrada 13 de abril',
+                      titleColor:0xFF363F5F,
+                      valueColor: 0xFF363F5F,
+                      subtitleColor: 0xFF969CB2,
                     ),
-
-
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 300.0,
-                        height: 183.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Color(0xFFFFFFFF),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: const [
-                                  Text(
-                                    'Entradas',
-                                    style: TextStyle(
-                                      fontFamily: 'Inter',
-                                      fontSize: 14,
-                                      decoration:TextDecoration.none,
-                                      fontWeight: FontWeight.w400,
-                                      color: Color(0xFF363F5F),
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                      backgroundColor: Color(0XFF12A454),
-                                      radius: 25,
-                                      child: CircleAvatar(
-                                        backgroundColor: Colors.white,
-                                        radius: 23,
-                                        child:  Icon(
-                                          Icons.arrow_upward_rounded,
-                                          color: Color(0XFF12A454),
-                                          size: 40,
-                                        ),
-                                      )
-                                  ),
-
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 20),
-                                child: Row(
-                                  children: [
-                                    Text(
-                                      'R\$ 17.400,00',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 32,
-                                        decoration:TextDecoration.none,
-                                        fontWeight: FontWeight.w400,
-                                        color: Color(0xFF363F5F),
-                                        fontStyle: FontStyle.normal,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Row(
-                                children: const [
-                                  Text(
-                                    'Última entrada 13 de abril',
-                                    style: TextStyle(
-                                      fontFamily: 'Inter',
-                                      fontSize: 12,
-                                      decoration:TextDecoration.none,
-                                      fontWeight: FontWeight.w400,
-                                      color: Color(0xFF969CB2),
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
+                    Cards(
+                      backgroundCardColor: 0xFFFFFFFF,
+                      cardTitle: "Saídas",
+                      iconCard: Icons.arrow_downward_rounded,
+                      iconColor: 0XFFE83F5B,
+                      circleIconBackgroundColor: 0xFFFFFFFF,
+                      circleIconColor:0XFFE83F5B,
+                      valorPrincipal: 1259.00,
+                      ultimoLcto: 'Última saída dia 03 de abril',
+                      titleColor:0xFF363F5F,
+                      valueColor: 0xFF363F5F,
+                      subtitleColor: 0xFF969CB2,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 300.0,
-                        height: 183.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Color(0xFFFFFFFF),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: const [
-                                  Text(
-                                    'Saídas',
-                                    style: TextStyle(
-                                      fontFamily: 'Inter',
-                                      fontSize: 14,
-                                      decoration:TextDecoration.none,
-                                      fontWeight: FontWeight.w400,
-                                      color: Color(0xFF363F5F),
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                      backgroundColor: Color(0XFFE83F5B),
-                                      radius: 25,
-                                      child: CircleAvatar(
-                                        backgroundColor: Colors.white,
-                                        radius: 23,
-                                        child:  Icon(
-                                          Icons.arrow_downward_rounded,
-                                          color: Color(0XFFE83F5B),
-                                          size: 40,
-                                        ),
-                                      )
-                                  ),
-
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 20),
-                                child: Row(
-                                  children: const [
-                                    Text(
-                                      'R\$ 1.259,00',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 32,
-                                        decoration:TextDecoration.none,
-                                        fontWeight: FontWeight.w400,
-                                        color: Color(0xFF363F5F),
-                                        fontStyle: FontStyle.normal,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Row(
-                                children: const [
-                                  Text(
-                                    'Última saída dia 03 de abril',
-                                    style: TextStyle(
-                                      fontFamily: 'Inter',
-                                      fontSize: 12,
-                                      decoration:TextDecoration.none,
-                                      fontWeight: FontWeight.w400,
-                                      color: Color(0xFF969CB2),
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
+                    Cards(
+                      backgroundCardColor: 0xFFDD2D82,
+                      cardTitle: "Total",
+                      iconCard: Icons.attach_money,
+                      iconColor: 0xFFFFFFFF,
+                      circleIconBackgroundColor: 0xFFDD2D82,
+                      circleIconColor:0xFFDD2D82,
+                      valorPrincipal: 16141.00,
+                      ultimoLcto: '01 à 16 de abril',
+                      titleColor:0xFFFFFFFF,
+                      valueColor: 0xFFFFFFFF,
+                      subtitleColor: 0xFFFFFFFF,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Container(
-                        width: 300.0,
-                        height: 183.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(5),
-                          color: Color(0xFFDD2D82),
-                        ),
-                        child: Padding(
-                          padding: const EdgeInsets.all(20.0),
-                          child: Column(
-                            children: [
-                              Row(
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: const [
-                                  Text(
-                                    'Total',
-                                    style: TextStyle(
-                                      fontFamily: 'Inter',
-                                      fontSize: 14,
-                                      decoration:TextDecoration.none,
-                                      fontWeight: FontWeight.w400,
-                                      color: Color(0xFFFFFFFF),
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                  Icon(
-                                    Icons.attach_money,
-                                    color: Color(0xFFFFFFFF),
-                                    size: 40,
-                                  ),
-
-                                ],
-                              ),
-                              Padding(
-                                padding: const EdgeInsets.only(top: 20),
-                                child: Row(
-                                  children: const [
-                                    Text(
-                                      'R\$ 1.259,00',
-                                      style: TextStyle(
-                                        fontFamily: 'Poppins',
-                                        fontSize: 32,
-                                        decoration:TextDecoration.none,
-                                        fontWeight: FontWeight.w400,
-                                        color: Color(0xFFFFFFFF),
-                                        fontStyle: FontStyle.normal,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Row(
-                                children: const [
-                                  Text(
-                                    '01 à 16 de abril',
-                                    style: TextStyle(
-                                      fontFamily: 'Inter',
-                                      fontSize: 12,
-                                      decoration:TextDecoration.none,
-                                      fontWeight: FontWeight.w400,
-                                      color: Color(0xFFFFFFFF),
-                                      fontStyle: FontStyle.normal,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
+                   
                   ],
                 ),
               ),
