@@ -38,7 +38,7 @@ class BarDash extends StatelessWidget implements PreferredSizeWidget {
                 decoration:TextDecoration.none,
                 fontWeight: FontWeight.w300,
               )),
-          Text('Rodrigoo',
+          Text('Rodrigo',
               style: TextStyle(
                 color: Color(0xFFFFFFFF),
                 fontSize: 18.0,
