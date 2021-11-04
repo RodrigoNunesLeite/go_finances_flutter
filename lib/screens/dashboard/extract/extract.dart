@@ -20,14 +20,22 @@ class Extract extends StatelessWidget {
                Text(
                  'Listagem',
                  textDirection: TextDirection.ltr,
+                 style: TextStyle(
+                   fontFamily: 'Poppins',
+                   fontStyle: FontStyle.normal,
+                   fontWeight: FontWeight.w400,
+                   fontSize: 18,
+                   color: Color(0xFF000000)
+                 )
                ),
              ],
            ),
         ),
           Padding(
-            padding: EdgeInsets.only(top: 1,left: 2),
-            child: ListItensExtract(),
-          ),
+              padding: EdgeInsets.only(top: 1,left: 2),
+              child: ListItensExtract(),
+           ),
+
       ],
         ),
     );

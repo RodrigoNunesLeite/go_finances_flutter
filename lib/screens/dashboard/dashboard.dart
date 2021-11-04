@@ -17,7 +17,25 @@ class Dashboard extends StatelessWidget {
         ),
       ),
       backgroundColor: Color(0xFFE5E5E5),
-          );
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xFFFFFFFF),
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.list),
+            label: 'Listagem',
+            backgroundColor: Colors.red,
+                      ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.monetization_on),
+            label: 'Cadastrar',
+            backgroundColor: Colors.green,
+          ),
+        ],
+        //currentIndex: _selectedIndex,
+        selectedItemColor: Colors.amber[800],
+        //onTap: _onItemTapped,
+      ),
+    );
   }
   
   

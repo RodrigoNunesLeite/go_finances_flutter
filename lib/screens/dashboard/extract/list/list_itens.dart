@@ -35,9 +35,6 @@ class ListItens extends StatelessWidget {
     required this.moveDate,
   });
 
-  main() {
-    String valorPrincipalFormatado =  getCurrency();
-  }
 
   String getCurrency() {
     NumberFormat formatter = NumberFormat.simpleCurrency(locale: 'pt_BR');
@@ -50,6 +47,7 @@ class ListItens extends StatelessWidget {
   Widget build(BuildContext context) {
 
   String valorPrincipalFormatado =  getCurrency();
+  this.valueColor = this.valorPrincipal < 0 ? 0xFFE83F5B : 0xFF12A454;
 
     return Padding(
       padding: const EdgeInsets.all(8.0),
