@@ -18,10 +18,11 @@ class Editor extends StatelessWidget{
       width: 327.0,
       height: 56.0,
       decoration: BoxDecoration(
-        color: Color(0XFFFFFFFF)
+        color: Color(0XFFFFFFFF),
+        borderRadius: BorderRadius.circular(5.0),
       ),
       child: Padding(
-        padding: EdgeInsets.all(16.0),
+        padding: EdgeInsets.all(8.0),
         child: TextField(
           controller: controlador,
           decoration: InputDecoration(
